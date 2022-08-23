@@ -57,7 +57,7 @@ const MovieDetails = ({route}) => {
           </View>
           <View style={[commonStyle.flexCenter, commonStyle.flexBetween, { marginTop: 5}]}>
             <Text style={{}}>Synopsis : </Text>
-          <Text style={{textAlign: 'left', marginTop: 20}}>
+          <Text style={{textAlign: 'left', marginTop: 20, marginBottom: 50}}>
             {synopsis} 
           </Text>
         </View>

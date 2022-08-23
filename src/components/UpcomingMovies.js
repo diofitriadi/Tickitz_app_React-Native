@@ -78,7 +78,7 @@ const UpcomingMovies = () => {
             synopsis: item.synopsis,
           })}>
             <View style={[commonStyle.flexRow, {marginVertical: 30}]} >
-              <View style={[commonStyle.flexCenter,{paddingTop: 15, paddingBottom: 20, width: 130, height:300, marginRight: 30, backgroundColor: '#fff', borderRadius: 5}]}>
+              <View style={[commonStyle.flexCenter,{paddingTop: 15, paddingBottom: 20, width: 130, height:350, marginRight: 30, backgroundColor: '#fff', borderRadius: 5}]}>
                 <Image source={{uri: `http://192.168.1.3:3000/uploads/${item.cover}`}} style={{
                   width: 100,
                   height: 150,
@@ -87,6 +87,11 @@ const UpcomingMovies = () => {
                 }}/>
                 <Text style={[commonStyle.flexCenter,commonStyle.textBlack, {paddingTop: 10, textAlign: 'center', fontWeight: 'bold'}]}>{item.title}</Text>
                 <Text style={[commonStyle.flexCenter,{flexWrap: 'wrap', textAlign: 'center', paddingVertical: 5}]}>{item.categories}</Text>
+                <TouchableOpacity>
+                  <View style={[commonStyle.flexCenter,{backgroundColor: '#5F2EEA', marginTop: 25, marginRight: 20,padding: 7, borderRadius: 5}]}>
+                    <Text style={[commonStyle.textWhite,commonStyle.flexCenter , {paddingHorizontal: 5}]}>Detail</Text>
+                  </View>
+                </TouchableOpacity>
               </View>
             </View>
           </Pressable>
